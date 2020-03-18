@@ -65,9 +65,7 @@
                     <label class="form-check-label" for="exampleRadios2">
                       1
                     </label>
-
                   </div>
-
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2"
                       value="option2">
@@ -75,8 +73,6 @@
                       2
                     </label>
                   </div>
-
-
                   <div class="form-check form-check-inline">
                     <input class="form-check-input " type="radio" name="exampleRadios3" id="exampleRadios3"
                       value="option3">
@@ -84,8 +80,6 @@
                       3
                     </label>
                   </div>
-
-
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios4"
                       value="option4">
@@ -93,8 +87,6 @@
                       4
                     </label>
                   </div>
-
-
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="exampleRadios5" id="exampleRadios5"
                       value="option5">
@@ -102,8 +94,6 @@
                       5
                     </label>
                   </div>
-
-
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="exampleRadios6" id="exampleRadios6"
                       value="option6">
@@ -114,7 +104,6 @@
                 </div>
               </div>
             </div>
-
             <div class="form-group">
               <div class="row">
                 <div class="col-2">
@@ -129,12 +118,10 @@
                       <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
                     </label>
                   </div>
-
                 </div>
               </div>
             </div>
             <div class="form-group">
-
               <div class="row">
                 <div class="col-auto">
                   <label>Date & Time</label>
@@ -146,26 +133,18 @@
                   <input type="text" class="form-control" placeholder="Time">
                 </div>
               </div>
-
             </div>
             <div class="form-group">
               <div class="text-center mt-3">
-
                 <button class="btn btn-secondary " data-dismiss="modal" type="button">Cancel</button>
                 <button class="btn btn-primary btn-sx" type="button">Reserve</button>
               </div>
-
             </div>
-
           </form>
         </div>
       </div>
-
-
     </div>
   </div>
-
-
   </div>
   </div>
   </div>
@@ -272,12 +251,9 @@
           <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon"></span>
           </a>
-         
-            <button class="btn btn-danger btn-sm" id="carouselButton">
-              <span class="fa fa-pause"> </span>
-            </button>
-           
-          
+          <button class="btn btn-danger btn-sm" id="carouselButton">
+            <span class="fa fa-pause"> </span>
+          </button>
         </div>
       </div>
     </div>
@@ -404,9 +380,6 @@
               <div class="text-center mt-3"><button class="btn btn-primary btn-sx" type="button">Reserve</button></div>
             </div>
           </div>
-
-
-
         </div>
       </div>
 
@@ -465,20 +438,20 @@
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
   <script>
-    $(document).ready(function(){
-      $('#mycarousel').carousel({interval:2000 });
-      $("#carouselButton").click(function(){
-                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                    $("#mycarousel").carousel('pause');
-                    $("#carouselButton").children("span").removeClass('fa-pause');
-                    $("#carouselButton").children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')){
-                    $("#mycarousel").carousel('cycle');
-                    $("#carouselButton").children("span").removeClass('fa-play');
-                    $("#carouselButton").children("span").addClass('fa-pause');                    
-                }
-            });
+    $(document).ready(function () {
+      $('#mycarousel').carousel({ interval: 2000 });
+      $("#carouselButton").click(function () {
+        if ($("#carouselButton").children("span").hasClass('fa-pause')) {
+          $("#mycarousel").carousel('pause');
+          $("#carouselButton").children("span").removeClass('fa-pause');
+          $("#carouselButton").children("span").addClass('fa-play');
+        }
+        else if ($("#carouselButton").children("span").hasClass('fa-play')) {
+          $("#mycarousel").carousel('cycle');
+          $("#carouselButton").children("span").removeClass('fa-play');
+          $("#carouselButton").children("span").addClass('fa-pause');
+        }
+      });
     });
   </script>
 </body>
